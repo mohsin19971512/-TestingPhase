@@ -3,7 +3,7 @@
 ## Clone the repository:
 
 ```
- git clone https://github.com/your-username/TestingPhase.git
+ git clone https://github.com/mohsin19971512/-TestingPhase.git
 ```
 
 ## Navigate to the project directory:
@@ -41,5 +41,11 @@ pip install -r requirements.txt
 ### Start the FastAPI server:
 ```
 uvicorn core.main:app --reload
+
+```
+## Open swagger  
+### After the server running open swagger by access this link
+```
+http://127.0.0.1:8000/docs
 
 ```

@@ -25,7 +25,6 @@ async def get_posts(author: str , category: str ):
 @router.post("/posts", response_model=PostSchemaOut, status_code=status.HTTP_201_CREATED)
 async def create_post(post_data: PostSchemaIn):
     try:
-        
         post = await Post.create(**post_data.model_dump())
         return post
     except Exception as e:
